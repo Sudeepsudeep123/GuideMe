@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.aadmin.guidemethree">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
+    <permission android:name="android.permission.CALL_PRIVILEGED" />
+
+    <uses-permission android:name="android.permission.READ_SMS" />
+    <uses-permission android:name="android.permission.RECEIVE_SMS" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <!-- Google MAP API key -->
+
+    <meta-data
+        android:name="com.google.android.maps.v2.API_KEY"
+        android:value="AIzaSyDKymeBXNeiFWY5jRUejv6zItpmr2MVyQ0" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".ViewAllCategoActivity" />
+        <activity android:name=".ListItemActivity1" />
+        <activity android:name=".ListItemActivity2" />
+        <activity android:name=".RegisterActivity" />
+        <activity android:name=".UserAreaActivity" />
+        <activity android:name=".CustomerLoginActivity" />
+        <activity android:name=".CustomerRegisterActivity" />
+        <activity android:name=".CustomerUserAreaActivity" />
+        <activity
+            android:name=".SearchBoxActivity"
+            android:label="@string/title_activity_search_box"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ExpandShops"
+            android:label="@string/title_activity_expand_shops"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Shops"
+            android:label="@string/title_activity_shops"
+            android:parentActivityName=".SearchBoxActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.aadmin.guidemethree.SearchBoxActivity" />
+        </activity>
+        <activity android:name=".ProfileContent" />
+        <activity android:name=".Profile"></activity>
+    </application>
+
+</manifest>

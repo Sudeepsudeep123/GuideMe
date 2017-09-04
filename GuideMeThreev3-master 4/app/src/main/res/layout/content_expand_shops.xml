@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.aadmin.guidemethree.Shops"
+    tools:showIn="@layout/activity_expand_shops">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        app:srcCompat="@mipmap/ic_launcher"
+        tools:layout_editor_absoluteY="16dp"
+        tools:layout_editor_absoluteX="16dp" />
+
+    <TextView
+        android:id="@+id/txtname"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="12dp"
+        tools:layout_editor_absoluteY="300dp"
+        tools:layout_editor_absoluteX="268dp"
+        android:layout_below="@+id/imageView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="21dp" />
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignParentStart="true"-->
+
+
+    <TextView
+        android:id="@+id/txtaddress"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        tools:layout_editor_absoluteY="229dp"
+        tools:layout_editor_absoluteX="113dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignStart="@+id/txtname"-->
+
+
+    <TextView
+        android:id="@+id/txttype"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/txtaddress"
+        android:layout_alignLeft="@+id/txtname"
+        android:layout_alignStart="@+id/txtname"
+        android:layout_marginLeft="44dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="33dp" />
+    <!--android:layout_alignParentEnd="true"-->
+    <!--android:layout_alignStart="@+id/txtaddress"-->
+    <!--android:layout_below="@+id/txtaddress"-->
+    <!--tools:layout_editor_absoluteY="300dp"-->
+    <!--tools:layout_editor_absoluteX="113dp" -->
+
+
+
+    <Button
+        android:id="@+id/btnlocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txttype"
+        android:text="Location"
+        tools:layout_editor_absoluteY="442dp"
+        tools:layout_editor_absoluteX="113dp" />
+    <!--android:layout_alignStart="@+id/txttype"-->
+
+
+</RelativeLayout>

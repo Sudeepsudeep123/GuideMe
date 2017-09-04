@@ -1,0 +1,78 @@
+<resources>
+    <string name="app_name">GuideMeThree</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string-array name="city">
+        <item>City</item>
+        <item>Kathmandu</item>
+    </string-array>
+    <string-array name="area">
+        <item>Area</item>
+        <item>Anamnagar</item>
+        <item>New Baneshwor</item>
+        <item>Old Baneshwor</item>
+        <item>Ghatekulo</item>
+        <item>Thapathali</item>
+        <item>Chabahil</item>
+        <item>Jorpati</item>
+    </string-array>
+    <string name="title_activity_front_page">FrontPageActivity</string>
+    <string name="title_activity_default_login">Sign in</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email
+        completions."
+    </string>
+    <string name="title_activity_view_all_category">ViewAllCategoryActivity</string>
+    <string name="title_activity_search_box">SearchBoxActivity</string>
+    <string name="title_activity_expand_shops">ExpandShops</string>
+    <string name="title_activity_shops">Shops</string>
+
+    <!--
+    <string name="app_name">Project</string>
+
+
+    <string name="text_accounts">All Accounts</string>
+    <string name="hint_name">Name</string>
+    <string name="hint_email">Username</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm Password</string>
+    <string name="text_login">Login</string>
+    <string name="text_register">Register</string>
+    <string name="error_message_name">Enter Full Name</string>
+    <string name="error_message_email">Enter Valid Email</string>
+    <string name="error_message_age">Enter Age</string>
+    <string name="error_message_password">Enter Password</string>
+    <string name="success_message">Registration Successful</string>
+    <string name="text_not_member">No account yet? Create one</string>
+    <string name="text_already_member">Already a member? Login</string>
+    <string name="error_email_exists">Email Already Exists</string>
+    <string name="error_password_match">Password Does Not Matches</string>
+    <string name="error_valid_email_password">Wrong Email or Password</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_hello">Hello,</string> -->
+    <array name="Places">
+        <item>Select Place</item>
+        <item>Chabahil</item>
+        <item>Ghattekulo</item>
+        <item>Jorpati</item>
+    </array>
+
+    <array name="ShopType">
+        <item>Select Shop Type</item>
+        <item>Carpenter</item>
+        <item>Garage</item>
+        <item>Tailor</item>
+    </array>
+</resources>

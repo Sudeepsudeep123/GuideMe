@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/bg"
+
+    tools:context="com.example.aadmin.guidemethree.MainActivity"
+tools:showIn="@layout/app_bar_main">
+    <Button
+        android:id="@+id/mainbtn"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="69dp"
+        android:background="@drawable/take_a_tour"
+        android:text="TAKE A TOUR"
+        android:onClick="ViewAllServices"
+        android:textColor="#d4cbc7"
+        android:layout_above="@+id/loginbtn"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/loginbtn"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+
+        android:layout_marginBottom="30dp"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp"
+        android:background="@drawable/mainbtn"
+        android:text="OFFERS"
+        android:textColor="@android:color/background_light"
+        tools:textColor="#d4cbc7" />
+
+    <Button
+        android:id="@+id/btnsearch"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/loginbtn"
+        android:layout_alignBottom="@+id/loginbtn"
+
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/mainbtn"
+        android:onClick="SearchService"
+        android:text="NEAR BY"
+        android:textColor="#d4cbc7" />
+
+
+</RelativeLayout>
+<!--<ImageView-->
+    <!--android:id="@+id/imageView1"-->
+    <!--android:layout_width="200dp"-->
+    <!--android:layout_height="50dp"-->
+    <!--android:background="@drawable/mainbtn"-->
+    <!--android:onClick="Owner"-->
+    <!--android:layout_marginTop="232dp"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+<!--<Button-->
+    <!--android:id="@+id/btn_new_customer"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="73dp"-->
+    <!--android:onClick="CustomerActivity"-->
+
+    <!--android:text="New user register here"-->
+    <!--android:layout_below="@+id/imageView1"-->
+    <!--android:layout_alignLeft="@+id/imageView1"-->
+    <!--android:layout_alignStart="@+id/imageView1" />-->
+
+<!--<Button-->
+    <!--android:onClick="ViewServices"-->
+
+    <!--android:id="@+id/btn_viewServices"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:text="View all services"-->
+    <!--android:layout_alignParentTop="true"-->
+    <!--android:layout_centerHorizontal="true" />-->
+
+<!--<Button-->
+    <!--android:id="@+id/btn_sudeep"-->
+    <!--android:onClick="sudeep"-->
+
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_alignLeft="@+id/btn_viewServices"-->
+    <!--android:layout_alignStart="@+id/btn_viewServices"-->
+    <!--android:layout_below="@+id/btn_viewServices"-->
+    <!--android:layout_marginTop="21dp"-->
+    <!--android:text="Button" />-->
+
+<!-- <ImageView
+     android:id="@+id/imageView2"
+     android:layout_width="200dp"
+     android:layout_height="50dp"
+
+     android:background="@drawable/mainbtn"
+     android:onClick="Driver"
+     android:layout_marginBottom="110dp"
+     android:layout_alignParentBottom="true"
+     android:layout_centerHorizontal="true" />
+
+
+
+ <ImageButton
+     android:onClick="price"
+     android:layout_marginTop="61dp"
+     android:layout_width="150dp"
+     android:layout_height="150dp"
+     android:id="@+id/imageButton"
+     android:background="@drawable/pricelisticon"
+     android:layout_below="@+id/textView2"
+     android:layout_alignLeft="@+id/textView2"
+     android:layout_alignStart="@+id/textView2" />
+ <ImageButton
+     android:onClick="TrafficSignal"
+     android:layout_width="150dp"
+     android:layout_height="150dp"
+     android:id="@+id/TrafficSig"
+     android:background="@drawable/trafficsig"
+     android:layout_alignTop="@+id/imageButton"
+     android:layout_alignLeft="@+id/textView13"
+     android:layout_alignStart="@+id/textView13" />
+
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:text="Services"
+     android:layout_marginLeft="35dp"
+     android:id="@+id/textView4"
+     android:layout_below="@+id/imageButton"
+     android:layout_alignLeft="@+id/imageButton"
+     android:layout_alignStart="@+id/imageButton" />
+ <TextView
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:textAppearance="?android:attr/textAppearanceLarge"
+     android:text="Traffic Signs"
+     android:id="@+id/textView13"
+     android:layout_below="@+id/TrafficSig"
+     android:layout_alignLeft="@+id/imageView2"
+     android:layout_alignStart="@+id/imageView2"
+     android:onClick="TrafficSignal"/>-->
+
